@@ -2,3 +2,9 @@ name: Block Sumo
 version: '${project.version}'
 main: net.blocksumo.BlockSumo
 api-version: 1.19
+
+commands:
+  gmc:
+    permission: bs.gmc
+  gms:
+    permission: bs.gms
