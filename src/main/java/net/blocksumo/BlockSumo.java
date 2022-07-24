@@ -2,6 +2,7 @@ package net.blocksumo;
 
 import net.blocksumo.Commands.gmcCMD;
 import net.blocksumo.Commands.gmsCMD;
+import net.blocksumo.Events.joinEvent;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +15,7 @@ public final class BlockSumo extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        getServer().getPluginManager().registerEvents(new joinEvent(), this);
 
         getCommand("gmc").setExecutor(new gmcCMD());
         getCommand("gms").setExecutor(new gmsCMD());
