@@ -1,0 +1,4 @@
+name: Block Sumo
+version: '${project.version}'
+main: net.blocksumo.BlockSumo
+api-version: 1.19
