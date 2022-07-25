@@ -14,7 +14,8 @@ public class playCMD implements CommandExecutor {
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, @NotNull String[] args) {
         if (sender instanceof Player p) {
             if (joined.contains(p)){
-                if (joined.size() >= 2) {
+                joined.add(p);
+                if (joined.size() >= 3) {
                     startGame();
                 }
             }
