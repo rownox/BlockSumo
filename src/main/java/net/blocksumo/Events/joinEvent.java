@@ -7,12 +7,13 @@ import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 
+import static net.blocksumo.BlockSumo.spawn;
+
 public class joinEvent implements Listener {
 
     @EventHandler
     public void onJoin(PlayerJoinEvent e) {
         Player p = e.getPlayer();
-        Location spawn = new Location(Bukkit.getWorld("Hub"), 0, 0, 0, 0, 0);
 
         p.teleport(spawn);
     }

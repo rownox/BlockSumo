@@ -1,9 +1,8 @@
 package net.blocksumo;
 
-import net.blocksumo.Commands.gmcCMD;
-import net.blocksumo.Commands.gmsCMD;
 import net.blocksumo.Events.joinEvent;
-import org.bukkit.block.Block;
+import org.bukkit.Bukkit;
+import org.bukkit.Location;
 import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -14,6 +13,8 @@ public final class BlockSumo extends JavaPlugin {
 
     public static List<Player> joined = new ArrayList<>();
     public static BlockSumo instance;
+
+    public static Location spawn = new Location(Bukkit.getWorld("Hub"), 0, 0, 0, 0, 0);
 
     @Override
     public void onEnable() {

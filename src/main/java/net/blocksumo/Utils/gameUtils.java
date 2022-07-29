@@ -14,6 +14,7 @@ import org.bukkit.scheduler.BukkitRunnable;
 import static net.blocksumo.BlockSumo.joined;
 
 public class gameUtils {
+
     public static void startGame() {
         Location gameSpawn = new Location(Bukkit.getWorld("event"), 0, 0,0, 0, 0);
 
